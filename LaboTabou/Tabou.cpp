@@ -69,6 +69,7 @@ int main(int NbParam, char *Param[])
 	LAlgo.LngListeTabous = atoi(Param[4]);
 	
 	LAlgo.NB_EVAL_MAX = atoi(Param[5]);
+	LAlgo.Best = &Best;
 
 	//**Lecture du fichier de donnees
 	LectureProbleme(NomFichier, LeProb, LAlgo);
@@ -92,7 +93,6 @@ int main(int NbParam, char *Param[])
 			cout << "CptEval: " << LAlgo.CptEval << "\tFct Obj Nouvelle Best: " << Best.FctObj << endl;
 		}
 	}while (LAlgo.CptEval < LAlgo.NB_EVAL_MAX);
-
 	AfficherResultats(Best, LeProb, LAlgo);
 	AfficherResultatsFichier(Best, LeProb, LAlgo,"Resultats.txt");
 	
@@ -124,8 +124,9 @@ TSolution GetSolutionVoisine(const TSolution uneSol, TProblem unProb, TAlgo &unA
 	for (i = 2; i <= unAlgo.TailleVoisinage; i++)
 	{
 		unVoisin = AppliquerVoisinage(uneSol, unProb, unAlgo);
-		if (unAlgo.isTabou(unAlgo.DerniereTransfo)) //tabou donc on oublie
-			continue;
+		if (unAlgo.isTabou(unAlgo.DerniereTransfo)) //cas tabou
+			if(unVoisin.FctObj >= unAlgo.Best->FctObj) //on checke critère aspiration minimal (est-ce mieux que la meilleure solution)
+				continue;
 		if (unVoisin.FctObj < unGagnant.FctObj) {
 			unGagnant = unVoisin;
 			bestTranfo = unAlgo.DerniereTransfo;

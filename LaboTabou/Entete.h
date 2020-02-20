@@ -56,6 +56,7 @@ struct TAlgo  //Définition du Tabou
 	int		TailleVoisinage;			//**Nombre de solutions voisines générées à chaque itération						//***NEW***
 	int		LngListeTabous;				//**Longueur de la liste des tabous													//***NEW***
 	std::list<Transformation> ListeTabous;
+	const TSolution* Best;
 
 	Transformation DerniereTransfo; //argumen temporaire, représente la dernière transformation employée
 
