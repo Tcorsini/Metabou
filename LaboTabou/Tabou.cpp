@@ -77,6 +77,7 @@ int main(int NbParam, char *Param[])
 	
 	//**Création de la solution initiale 
 	CreerSolutionAleatoire(Courante, LeProb, LAlgo);
+	Best = Courante;
 	AfficherSolution(Courante, LeProb, "SolInitiale: ", false);
 
 	do

@@ -588,3 +588,13 @@ FCT OBJ:   8442
 NOMBRE EVALUATIONS: 50001/50000
 LONGUEUR LISTE TABOUS: 30
 **********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8   10    3   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
