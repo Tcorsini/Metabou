@@ -48,7 +48,6 @@ TSolution GetSolutionVoisine (const TSolution uneSol, TProblem unProb, TAlgo &un
 //DESCRIPTION:	 Echange de deux villes sélectionnée aléatoirement. NB:uneSol ne doit pas être modifiée
 TSolution	AppliquerVoisinage	(const TSolution uneSol, TProblem unProb, TAlgo &unAlgo);
 
-
 //******************************************************************************************
 // Fonction main
 //*****************************************************************************************
@@ -82,12 +81,11 @@ int main(int NbParam, char *Param[])
 
 	do
 	{
-		Courante = GetSolutionVoisine(Courante, LeProb, LAlgo);
+		Next = GetSolutionVoisine(Courante, LeProb, LAlgo);
 		//AfficherSolution(Courante, LeProb, "Courante: ", false);
 		//AfficherSolution(Next, LeProb, "Next: ", false);
-		if (LAlgo.ListeTabous.size() >= LAlgo.LngListeTabous)
-			LAlgo.ListeTabous.pop_back();
-		LAlgo.ListeTabous.push_front(LAlgo.DerniereTransfo);
+		LAlgo.addTabou(Courante);
+		Courante = Next;
 
 		if (Courante.FctObj < Best.FctObj) {
 			CopierSolution(Courante, Best, LeProb);
@@ -126,7 +124,7 @@ TSolution GetSolutionVoisine(const TSolution uneSol, TProblem unProb, TAlgo &unA
 	{
 		unVoisin = AppliquerVoisinage(uneSol, unProb, unAlgo);
 		if (unAlgo.isTabou(unAlgo.DerniereTransfo)) //cas tabou
-			if(unVoisin.FctObj >= unAlgo.Best->FctObj) //on checke critère aspiration minimal (est-ce mieux que la meilleure solution)
+			if(!unAlgo.Aspiration(unVoisin)) //on checke critère aspiration minimal (est-ce mieux que la meilleure solution)
 				continue;
 		if (unVoisin.FctObj < unGagnant.FctObj) {
 			unGagnant = unVoisin;

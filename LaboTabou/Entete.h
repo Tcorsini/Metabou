@@ -56,6 +56,8 @@ struct TAlgo  //Définition du Tabou
 	int		TailleVoisinage;			//**Nombre de solutions voisines générées à chaque itération						//***NEW***
 	int		LngListeTabous;				//**Longueur de la liste des tabous													//***NEW***
 	std::list<Transformation> ListeTabous;
+	std::list<int> NiveauAspiration;
+
 	const TSolution* Best;
 
 	Transformation DerniereTransfo; //argumen temporaire, représente la dernière transformation employée
@@ -65,6 +67,32 @@ struct TAlgo  //Définition du Tabou
 			if (t2 == t) return true;
 		}
 		return false;
+	}
+
+	//revoie l'index du tabou en argument si il existe
+	int findNiveauAspiration(const Transformation& t) {
+		std::list<int>::const_iterator it = NiveauAspiration.begin();
+		for (const Transformation& t2 : ListeTabous) {
+			if (t2 == t) return *it;
+			++it;
+		}
+		return -1; //minorant de f donc interdit
+	}
+
+	//DESCRIPTION: critères d'aspiration, renvoie vrai si la solution concernée (qui est tabou) doit être étudiée, faux sinon
+	bool Aspiration(const TSolution& unVoisin) {
+		return (unVoisin.FctObj < Best->FctObj) || 
+			(unVoisin.FctObj < findNiveauAspiration(DerniereTransfo));
+	}
+
+	//ajoute à la liste des tabous la dernière transformation et la solution d'ou part cette transformation
+	void addTabou(const TSolution& previous) {
+		if (ListeTabous.size() >= LngListeTabous) {
+			ListeTabous.pop_back();
+			NiveauAspiration.pop_back();
+		}
+		ListeTabous.push_front(DerniereTransfo);
+		NiveauAspiration.push_front(previous.FctObj);
 	}
 };
 

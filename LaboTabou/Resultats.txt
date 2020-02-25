@@ -598,3 +598,213 @@ FCT OBJ:   8430
 NOMBRE EVALUATIONS: 50001/50000
 LONGUEUR LISTE TABOUS: 30
 **********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16    4   19    7    8   10    3   14   13    6
+FCT OBJ:   8436
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17   11    5   16   19    7    4    8    3   10   14   13    6
+FCT OBJ:   8435
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12    5   17   11   16   19    4    8    7   10    3   14   13    6
+FCT OBJ:   8433
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16    4   19    8    7    3   10   14   13    6
+FCT OBJ:   8437
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8    3   10   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    7    4    3    8   10   14   13    6
+FCT OBJ:   8439
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    7    4    8   10    3   14   13    6
+FCT OBJ:   8434
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12    5   17   11   16   19    4    7    3    8   10   14   13    6
+FCT OBJ:   8437
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16    4   19    7    8    3   10   14   13    6
+FCT OBJ:   8436
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9    0   15    1   18   12   17   11    5   16   19    4    7    8    3   10   14   13    6
+FCT OBJ:   8442
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   11   17    5   16   19    4    7    3    8   10   14   13    6
+FCT OBJ:   8438
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    3    8   10   14   13    6
+FCT OBJ:   8435
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8   10    3   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8    3   10   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8   10    3   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8   10    3   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8   10    3   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8    3   10   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8   10    3   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8   10    3   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
+
+********************************************** RECHERCHE TABOUS
+Prob20.txt	 H: 0.2	 TailleVoisinage: 50
+SOLUTION FINALE: 
+    2    9   15    0    1   18   12   17    5   11   16   19    4    7    8   10    3   14   13    6
+FCT OBJ:   8430
+
+NOMBRE EVALUATIONS: 50001/50000
+LONGUEUR LISTE TABOUS: 30
+**********************************************
