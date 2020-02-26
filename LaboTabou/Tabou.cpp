@@ -77,7 +77,7 @@ int main(int NbParam, char *Param[])
 	//**Création de la solution initiale 
 	CreerSolutionAleatoire(Courante, LeProb, LAlgo);
 	Best = Courante;
-	AfficherSolution(Courante, LeProb, "SolInitiale: ", false);
+	//AfficherSolution(Courante, LeProb, "SolInitiale: ", false);
 
 	do
 	{
@@ -89,15 +89,15 @@ int main(int NbParam, char *Param[])
 
 		if (Courante.FctObj < Best.FctObj) {
 			CopierSolution(Courante, Best, LeProb);
-			cout << "CptEval: " << LAlgo.CptEval << "\tFct Obj Nouvelle Best: " << Best.FctObj << endl;
+			//cout << "CptEval: " << LAlgo.CptEval << "\tFct Obj Nouvelle Best: " << Best.FctObj << endl;
 		}
 	}while (LAlgo.CptEval < LAlgo.NB_EVAL_MAX);
-	AfficherResultats(Best, LeProb, LAlgo);
+	//AfficherResultats(Best, LeProb, LAlgo);
 	AfficherResultatsFichier(Best, LeProb, LAlgo,"Resultats.txt");
 	
 	LibererMemoireFinPgm(Courante, Next, Best, LeProb);
 
-	system("PAUSE");
+	//system("PAUSE");
 	return 0;
 }
 
@@ -113,18 +113,18 @@ TSolution GetSolutionVoisine(const TSolution uneSol, TProblem unProb, TAlgo &unA
 	TSolution unVoisin;
 	TSolution unGagnant;
 	Transformation bestTranfo;
-	int i;
+	int i = 1;
 
-	//AfficherSolution(uneSol, unProb, "Courante: ", false);
-	unGagnant = AppliquerVoisinage(uneSol, unProb, unAlgo);
-	//AfficherSolution(uneSol, unProb, "CouranteApres: ", false);
-	//AfficherSolution(unGagnant, unProb, "unGagnant: ", false);
+	do { //on tire un premier voisin jusqu'à ce qu'il soit non tabou (ou aspiré) ou bien si tous les voisins sont tabou, on garde le dernier tiré aléatoirement (deuxième aspiration implicite)
+		unGagnant = AppliquerVoisinage(uneSol, unProb, unAlgo);
+		bestTranfo = unAlgo.DerniereTransfo;
+	} while (++i <= unAlgo.TailleVoisinage && unAlgo.isTabou(unAlgo.DerniereTransfo) && !unAlgo.Aspiration(unGagnant));
 
-	for (i = 2; i <= unAlgo.TailleVoisinage; i++)
+	for (; i <= unAlgo.TailleVoisinage; i++)
 	{
 		unVoisin = AppliquerVoisinage(uneSol, unProb, unAlgo);
 		if (unAlgo.isTabou(unAlgo.DerniereTransfo)) //cas tabou
-			if(!unAlgo.Aspiration(unVoisin)) //on checke critère aspiration minimal (est-ce mieux que la meilleure solution)
+			if(!unAlgo.Aspiration(unVoisin)) //on checke critère aspiration
 				continue;
 		if (unVoisin.FctObj < unGagnant.FctObj) {
 			unGagnant = unVoisin;
